@@ -1,4 +1,4 @@
-package com.lindenlabs.noted.android
+package com.lindenlabs.noted.android.base
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
