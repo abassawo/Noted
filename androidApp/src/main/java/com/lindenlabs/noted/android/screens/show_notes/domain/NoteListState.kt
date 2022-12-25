@@ -1,0 +1,9 @@
+package com.lindenlabs.noted.android.screens.show_notes.domain
+
+import com.lindenlabs.noted.data.Note
+
+data class NoteListState(
+    val notes: List<Note> = emptyList(),
+    val searchText: String = "",
+    val isSearchActive: Boolean = false
+)
