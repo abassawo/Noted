@@ -28,7 +28,7 @@ import com.lindenlabs.noted.data.Note
 import com.lindenlabs.noted.utils.DateTimeUtil
 
 @Composable
-fun NoteItemViewEntity(
+fun NoteItemView(
     note: Note,
     backgroundColor: Color,
     onNoteClick: () -> Unit,

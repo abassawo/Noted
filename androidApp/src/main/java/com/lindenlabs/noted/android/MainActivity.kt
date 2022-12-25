@@ -3,15 +3,11 @@ package com.lindenlabs.noted.android
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.lindenlabs.noted.android.screens.show_notes.NoteListScreen
+import com.lindenlabs.noted.android.screens.show_notes.views.NoteListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

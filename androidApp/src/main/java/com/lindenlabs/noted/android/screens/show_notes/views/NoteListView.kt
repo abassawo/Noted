@@ -1,4 +1,4 @@
-package com.lindenlabs.noted.android.screens.show_notes
+package com.lindenlabs.noted.android.screens.show_notes.views
 
 
 import androidx.compose.animation.AnimatedVisibility
@@ -26,8 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.lindenlabs.noted.android.screens.show_notes.views.HideableSearchTextField
-import com.lindenlabs.noted.android.screens.show_notes.views.NoteItemViewEntity
+import com.lindenlabs.noted.android.screens.show_notes.ShowNotesViewModel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -95,7 +94,7 @@ fun NoteListScreen(
                     items = state.notes,
                     key = { it.id!! }
                 ) { note ->
-                    NoteItemViewEntity(
+                    NoteItemView(
                         note = note,
                         backgroundColor = Color(note.colorHex),
                         onNoteClick = {
