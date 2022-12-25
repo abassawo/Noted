@@ -53,5 +53,3 @@ fun MyApplicationTheme(
         content = content
     )
 }
-class MainActivityDelegate {
-}
