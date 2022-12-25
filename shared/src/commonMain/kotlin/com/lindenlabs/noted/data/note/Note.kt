@@ -1,4 +1,4 @@
-package com.lindenlabs.noted.data
+package com.lindenlabs.noted.data.note
 
 import com.lindenlabs.noted.presentation.BabyBlueHex
 import com.lindenlabs.noted.presentation.LightGreenHex
