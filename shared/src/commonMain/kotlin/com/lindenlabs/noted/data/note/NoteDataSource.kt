@@ -1,4 +1,4 @@
-package com.lindenlabs.noted.data
+package com.lindenlabs.noted.data.note
 
 interface NoteDataSource {
     suspend fun insertNote(note: Note)

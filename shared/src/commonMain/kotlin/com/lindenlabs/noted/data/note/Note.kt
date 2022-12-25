@@ -1,10 +1,5 @@
-package com.lindenlabs.noted.data
+package com.lindenlabs.noted.data.note
 
-import com.lindenlabs.noted.presentation.BabyBlueHex
-import com.lindenlabs.noted.presentation.LightGreenHex
-import com.lindenlabs.noted.presentation.RedOrangeHex
-import com.lindenlabs.noted.presentation.RedPinkHex
-import com.lindenlabs.noted.presentation.VioletHex
 import database.NoteEntity
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDateTime

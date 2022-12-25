@@ -4,8 +4,8 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.lindenlabs.noted.android.screens.note_detail.domain.NoteDetailState
-import com.lindenlabs.noted.data.Note
-import com.lindenlabs.noted.data.NoteDataSource
+import com.lindenlabs.noted.data.note.Note
+import com.lindenlabs.noted.data.note.NoteDataSource
 import com.lindenlabs.noted.utils.DateTimeUtil
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

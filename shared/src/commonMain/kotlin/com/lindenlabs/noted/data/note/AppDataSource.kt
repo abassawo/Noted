@@ -1,7 +1,5 @@
-package com.lindenlabs.noted
+package com.lindenlabs.noted.data.note
 
-import com.lindenlabs.noted.data.Note
-import com.lindenlabs.noted.data.NoteDataSource
 import com.lindenlabs.noted.database.NoteDatabase
 import com.lindenlabs.noted.utils.DateTimeUtil
 
