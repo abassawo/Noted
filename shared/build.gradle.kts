@@ -6,6 +6,11 @@ plugins {
 
 kotlin {
     android()
+
+    js(IR) {
+        nodejs()
+        binaries.library()
+    }
     
     listOf(
         iosX64(),
@@ -18,6 +23,7 @@ kotlin {
     }
 
     sourceSets {
+        val jsMain by getting
         val commonMain by getting {
             dependencies {
                 implementation("com.squareup.sqldelight:runtime:1.5.3")
