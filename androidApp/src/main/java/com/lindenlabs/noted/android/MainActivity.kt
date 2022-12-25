@@ -8,6 +8,9 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +23,11 @@ class MainActivity : ComponentActivity() {
         @Composable
         operator fun invoke() {
             return MyApplicationTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    ""
+                val navController = rememberNavController()
+                NavHost(navController = navController, startDestination = "note_list") {
+                    composable(route = "note_list") {
+
+                    }
                 }
             }
         }
