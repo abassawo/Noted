@@ -11,7 +11,7 @@ kotlin {
         nodejs()
         binaries.library()
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -23,13 +23,19 @@ kotlin {
     }
 
     sourceSets {
-        val jsMain by getting
         val commonMain by getting {
             dependencies {
                 implementation("com.squareup.sqldelight:runtime:1.5.3")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
             }
         }
+//        val jsMain by getting {
+//            dependencies {
+//                implementation("com.squareup.sqldelight:sqljs-driver:1.5.4")
+//            }
+//            dependsOn(commonMain)
+//
+//        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))

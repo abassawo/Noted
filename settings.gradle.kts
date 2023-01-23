@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Noted"
 include(":androidApp")
 include(":shared")
+include(":webapp")
